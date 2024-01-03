@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nice-select2.css" />
+</head>
+<body>
+    <header class="siteheader">
+        <div class="logo">
+            <i class='bx bxs-game logoicon'></i>
+            Game<span class="logopart2">Lovers</span>                
+        </div>
+        <nav>
+            <ul class="navmenu">
+                <li><a class="headeranchor" href="#home">Start</a></li>
+                <li><a class="headeranchor" href="#memory">Memory</a></li>
+            </ul>
+        </nav>
+        <ul class="navicons">
+           <li><a class="navicons__headeranchor" href="#"><i class='bx bx-search-alt'></i></a></li> 
+           <li><a class="navicons__headeranchor" href="#"><i class='bx bx-menu' ></i></a></li> 
+        </ul>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="home__content">
+                <h1>Stefans supergames</h1>
+                <h2>En bra affär!</h2>
+                <p class="salesparagraf">
+                    Massa roliga spel<br />
+                    Eller ja...bara ett...och inte är det kul heller...</p>
+                <a class="ctabutton" href="#memory">Memory</a>
+            </div>
+        </section>
+
+
+        <section class="products" id="memory">
+          <h1>Memory</h1>
+          <div class="contact__content">
+              <div class="wrapper">
+                  <ul class="cards" id="memory-cards">
+                      
+                  </ul>
+              </div>
+          </div>
+      
+
+          <div class="details">
+            <label for="time-dropdown">Välj tid:</label>
+            <select id="time-dropdown">
+                <option data-display="Select" value="45">45s</option>
+                <option value="30">30s</option>
+                <option value="15">15s</option>
+            </select>
+            <button data-action="start-game">Starta spelet</button>
+        </div>
+        <div class="details">
+            <p class="flips">Tid kvar: <span><b id="countdown"></b></span></p>
+            <p class="points">Poäng: <span><b id="points">0</b></span></p>
+  
+        </div>
+            </section>
+      
+        
+          
+
+
+    </main>
+    <footer>
+        (C) Stefan
+    </footer>
+
+ 
+    <script src="script.js"></script>
+    <script src="nice-select2.js"></script>
+</body>
+</html>
